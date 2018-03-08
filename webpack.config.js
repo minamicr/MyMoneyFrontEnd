@@ -20,7 +20,6 @@ module.exports = {
             modules: __dirname + '/node_modules',
             jquery: 'modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js',
             bootstrap: 'modules/admin-lte/bootstrap/js/bootstrap.js'
-
         }
     },
     plugins: [
@@ -33,7 +32,7 @@ module.exports = {
         }),
         new ExtractTextPlugin('app.css')
     ],
-    module:{
+    module: {
         loaders: [{
             test: /.js[x]?$/,
             loader: 'babel-loader',
